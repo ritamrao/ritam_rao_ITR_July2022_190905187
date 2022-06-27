@@ -23,11 +23,14 @@
     <link rel="stylesheet" href="assets/css/lightbox.css">
 <!--
 
-TemplateMo 569 Edu Meeting
-
-https://templatemo.com/tm-569-edu-meeting
+carousel stuff
 
 -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   </head>
 
 <body>
@@ -68,10 +71,66 @@ https://templatemo.com/tm-569-edu-meeting
   <!-- ***** Header Area End ***** -->
 
   <!-- ***** Main Banner Area Start ***** -->
-  <section class="section main-banner" id="top" data-section="section1">
-      <video autoplay muted loop id="bg-video">
-          <source src="assets/images/course-video.mp4" type="video/mp4" >
-      </video>
+  <section class="section main-banner" id="top" data-section="section1" >
+    <div style="background-color: green;">
+      <div id="bg-video" style="background-color: green;">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <picture>
+                <source srcset="assets/images/1.jpg" media="(min-width: 1400px)">
+                <source srcset="assets/images/1.jpg" media="(min-width: 768px)">
+                <img srcset="assets/images/1mobile.jpg" alt="responsive image" class="d-block img-fluid">
+              </picture>
+              <div class="carousel-caption d-block">
+                  <div class="animate__animated animate__fadeInDown" style="animation-delay: 0.5s ">
+                    <h5>springfield agri</h5>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
+                  </div> 
+                </div>
+              </div>
+          <div class="carousel-item">
+            <picture>
+              <source srcset="assets/images/possiblebg.jpg" media="(min-width: 1400px)">
+              <source srcset="assets/images/possiblebg.jpg" media="(min-width: 768px)">
+              <img srcset="assets/images/possiblebgmobile.jpg" alt="responsive image" class="d-block img-fluid">
+            </picture>
+              <div class="carousel-caption d-block">
+                  <div class="animate__animated animate__fadeInDown" style="animation-delay: 0.5s">
+                    <h5 style="color: black;">Banner Text two</h5>
+                    <p style="color: black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
+                  </div>
+                </div>
+              </div>
+            <div class="carousel-item">
+              <picture>
+                <source srcset="assets/images/tractor.jpg" media="(min-width: 1400px)">
+                <source srcset="assets/images/tractor.jpg" media="(min-width: 768px)">
+                <img srcset="assets/images/tractormobile.jpg" alt="responsive image" class="d-block img-fluid">
+              </picture>
+              <div class="carousel-caption d-block">
+                  <div class="animate__animated animate__fadeInDown" style="animation-delay: 0.5s">
+                      <h5 style="color: black;">Banner Text three</h5>
+                      <p style="color: black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
+                  </div> 
+              </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
 
       <div class="video-overlay header-text">
           <div class="container">
@@ -79,15 +138,14 @@ https://templatemo.com/tm-569-edu-meeting
               <div class="col-lg-12">
                 <div class="caption" style="background-color:rgba(0, 128, 0, 0.774) ;">
               
-              <h2 id="apply">Agric Vertical</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              
+             
           </div>
               </div>
             </div>
           </div>
           <a href="#branches" class="custom-link bi-arrow-down arrow-icon"> </a>
       </div>
+    </div>
   </section>
   <!-- ***** Main Banner Area End ***** -->
 
@@ -153,7 +211,7 @@ https://templatemo.com/tm-569-edu-meeting
       <div class="row">
         <div class="col-lg-12">
           <div class="section-heading">
-            <h2 id="branches" style="color: black; padding-top:20px ;">Our Branches</h2>
+            <h2 id="branches" style="color: black; ">Our Branches</h2>
             <div class="row">
             <div class="col-lg-6"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quo eaque nulla est facere, eum perspiciatis accusantium quibusdam! Esse deleniti dicta quam nemo, quae sit obcaecati omnis officiis maxime ipsam!</div>
             <div class="col-lg-6"><iframe src="https://www.google.com/maps/d/embed?mid=1Qpz-dU7R_jRTX5BGy6xhgHcC6U1BW5s&ehbc=2E312F" width="640" height="480"></iframe></div>
@@ -165,8 +223,7 @@ https://templatemo.com/tm-569-edu-meeting
   </section>
 
   <!--<section class="our-courses" id="courses"><iframe src="https://www.google.com/maps/d/embed?mid=1Qpz-dU7R_jRTX5BGy6xhgHcC6U1BW5s&ehbc=2E312F" width="640" height="480"></iframe></section>-->
-  <section class="our-facts">
-  </section>
+
   
   <section class="contact-us" id="contact">
   </section>
