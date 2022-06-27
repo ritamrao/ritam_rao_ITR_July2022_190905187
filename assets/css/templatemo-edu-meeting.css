@@ -1116,7 +1116,8 @@ upcoming meetings page
 */
 
 section.meetings-page {
-  background-image: url(../images/meetings-page-bg.jpg);
+  background-image: url(../images/—Pngtree—matte\ texture\ black\ pattern\ background_1308188.png);
+  /*background-image: linear-gradient(black, black);*/
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
