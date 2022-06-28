@@ -91,7 +91,7 @@ html, body {
 
 a {
   text-decoration: none !important;
-  color: #3CF;
+  color: #fff;
 }
 
 a:hover {
@@ -690,6 +690,10 @@ position: absolute;
 }
 .carousel-caption {
   bottom: 270px;
+  top:50%;
+  align-items: left;
+  align-content: left;
+  text-align: left;
 }
 
 .carousel-caption h5 {
@@ -709,6 +713,10 @@ position: absolute;
   font-weight: 600;
   color: #fff;
   letter-spacing: 1px;
+}
+
+#blush:hover{
+  color: #eee;
 }
 
 .video-overlay {
@@ -783,6 +791,16 @@ position: absolute;
   text-align: center;
   display: inline-block;
   margin: auto;
+}
+
+#bottom-button
+{
+  width: 50px; 
+  z-index: 2; 
+  position: absolute;
+  margin-top: 87vh;
+  margin-left: 85vw;
+  --animate-repeat: 3;
 }
 
 .arrow-icon:hover {
@@ -1057,7 +1075,7 @@ a:hover
   /*margin-top: 200px;*/
   border-top: 1px solid rgb(0, 0, 0);
   padding: 50px 0px;
-  background-image: url(../images/meetings-page-bg.jpg);
+  background-image: url(../images/africa-g95318210c_1920-1024x768.jpg);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1112,7 +1130,7 @@ upcoming meetings page
 */
 
 section.meetings-page {
-  background-image: url(../images/—Pngtree—matte\ texture\ black\ pattern\ background_1308188.png);
+  /*background-image: url(../images/—Pngtree—matte\ texture\ black\ pattern\ background_1308188.png);*/
   /*background-image: linear-gradient(black, black);*/
   background-position: center center;
   background-attachment: fixed;
@@ -1127,19 +1145,7 @@ section.meetings-page .filters {
   margin-bottom: 60px;
 }
 
-section.meetings-page .filters li {
-  font-size: 13px;
-  color: #a12c2f;
-  background-color: #fff;
-  padding: 11px 30px;
-  display: inline-block;
-  border-radius: 22px;
-  font-weight: 600;
-  text-transform: uppercase;
-  transition: all .3s;
-  cursor: pointer;
-  margin: 0px 3px;
-}
+
 
 section.meetings-page .filters ul li.active,
 section.meetings-page .filters ul li:hover {
